@@ -1,0 +1,178 @@
+body{
+
+    width:260px;
+
+    margin:16px;
+
+    font-family:sans-serif;
+
+    position:relative;
+
+}
+
+h2{
+
+    margin:0 0 18px 0;
+
+    font-size:20px;
+
+}
+
+.toggleRow{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin:28px 0;
+
+}
+
+.switch{
+
+    position:relative;
+
+    width:56px;
+
+    height:30px;
+
+    display:inline-block;
+
+}
+
+.switch input{
+
+    display:none;
+
+}
+
+.slider{
+
+    position:absolute;
+
+    inset:0;
+
+    background:#cfcfcf;
+
+    border-radius:24px;
+
+    transition:.2s;
+
+}
+
+.slider::before{
+
+    content:"";
+
+    display:block;
+
+    position:absolute;
+
+    width:24px;
+
+    height:24px;
+
+    left:3px;
+
+    top:3px;
+
+    background:white;
+
+    border-radius:50%;
+
+    transition:.2s;
+
+}
+
+input:checked + .slider{
+
+    background:#0a84ff;
+
+}
+
+input:checked + .slider::before{
+
+    transform:translateX(26px);
+
+}
+
+.modeTitle{
+
+    font-weight:bold;
+
+    margin-bottom:8px;
+
+}
+
+.radio{
+
+    display:block;
+
+    margin:6px 0;
+
+}
+
+#settingsButton{
+
+    position:absolute;
+
+    top:0;
+
+    right:0;
+
+    width:28px;
+
+    height:28px;
+
+    border:none;
+
+    background:transparent;
+
+    padding:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+}
+
+#settingsButton img{
+
+    width:36px;
+    height:36px;
+
+    pointer-events:none;
+
+}
+
+#settingsButton:hover{
+
+    background:rgba(0,0,0,.08);
+
+    border-radius:6px;
+
+}
+
+#resetButton{
+
+    width:100%;
+
+    margin-top:12px;
+
+}
+
+.hidden{
+
+    display:none !important;
+
+}
+
+#settingsPanel{
+
+    margin-top:10px;
+
+}

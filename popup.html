@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <button
+        id="settingsButton"
+        title="Settings">
+
+        <img
+            src="icons/settings.svg"
+            alt="Settings">
+
+    </button>
+
+    <h2>Safari Mask</h2>
+
+    <div class="toggleRow">
+
+    <label class="switch">
+
+        <input
+            type="checkbox"
+            id="siteToggle">
+
+        <span class="slider"></span>
+
+    </label>
+
+</div>
+    <div id="settingsPanel" class="hidden">
+
+        <hr>
+
+        <div class="modeTitle">
+            Mode
+        </div>
+
+        <label class="radio">
+            <input
+                type="radio"
+                name="settingsMode"
+                value="blacklist">
+            Blacklist
+        </label>
+
+        <label class="radio">
+            <input
+                type="radio"
+                name="settingsMode"
+                value="whitelist">
+            Whitelist
+        </label>
+
+        <button id="resetButton">
+            Reset site list
+        </button>
+    </div>
+    <script src="popup.js"></script>
+
+</body>
+
+</html>
